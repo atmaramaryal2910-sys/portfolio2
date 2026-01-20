@@ -1,0 +1,27 @@
+.stats-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+}
+
+.stats-overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+  text-align: center;
+}
+
+.stat h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.stat p {
+  letter-spacing: 4px;
+  font-size: 14px;
+  opacity: 0.9;
+}
