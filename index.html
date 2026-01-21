@@ -4,6 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atmaram</title>
+   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    .contact-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-form {
+      background: #ffffff;
+      padding: 30px;
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #1e40af;
+    }
+  </style>
     <meta name="decsription" content="Atmaram Aryal is a Student" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +93,13 @@
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/education.css" />
     <link rel="stylesheet" href="css/stats.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    
 
   </head>
   <body>
+    
+
+
 
     <nav class="sidebar">
       <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger sidebar_hamburger_translate"></i>
@@ -39,7 +109,8 @@
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">contact</a>
+          
           
 
         </ul>
@@ -187,6 +258,16 @@
   </div>
 </section>
 
+
+<section class="cta-section">
+  <h2>I am happy to know you that 10+ projects done successfully!</h2>
+
+  <a href="#contact">
+    <button class="cta-btn">HIRE ME</button>
+  </a>
+</section>
+
+
   <div class="stats-overlay">
     <div class="stat">
       <h1>200+</h1>
@@ -208,23 +289,31 @@
       <p>PARTNERS 👥</p>
     </div>
   </div>
-
-<form
-  action="https://formspree.io/f/xwvvwkkg"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+   <section id="contact" class="contact-section">
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/xwvvwkkg"
+      method="POST"
+    >
+      <h2>Contact Me</h2>
+      <label for="name">Your Name</label>
+<input type="text" id="name" name="name" required>
 
 
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <!-- Prevent redirect to Formspree page -->
+      <input type="hidden" name="_next" value="/">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  
 </body>
 </html>
