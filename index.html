@@ -84,7 +84,12 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+
     />
+    
+
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -97,13 +102,12 @@
 
   </head>
   <body>
-    
-
-
-
     <nav class="sidebar">
       <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger sidebar_hamburger_translate"></i>
       <div class="sidebar_content">
+        <img class="sidebar__image" src="images/merophoto.png" alt="Profile Image" />
+    <h1 class="sidebar__name">Atmaram Aryal</h1>
+    <h2 class="sidebar__job">Student <span>in Nepal</span></h2>
         <ul>
           <a href="#hero">Home</a>
           <a href="#about">About</a>
@@ -116,6 +120,9 @@
         </ul>
       </div>
     </nav>
+
+
+    
 <section id="hero">
       <h1>
         Hi! <br />
@@ -123,9 +130,14 @@
         I am a Student
       </h1>
       <p>Electronics, Communication and Information Engineer</p>
-      <button class="hero__btn">
-        Contact me <i class="fa-solid fa-envelope"></i>
-      </button>
+
+     <a href="#contact" class="contact-btn">
+  CONTACT ME
+  <span class="icon">✉</span>
+</a>
+
+
+
     </section>
 
     <section id="about" class="section">
@@ -290,11 +302,14 @@
     </div>
   </div>
    <section id="contact" class="contact-section">
+  
+
     <form
       class="contact-form"
       action="https://formspree.io/f/xwvvwkkg"
       method="POST"
     >
+   
       <h2>Contact Me</h2>
       <label for="name">Your Name</label>
 <input type="text" id="name" name="name" required>
@@ -311,9 +326,10 @@
 
       <button type="submit">Send Message</button>
     </form>
+    
   </section>
-
-
+  
   
 </body>
 </html>
+
