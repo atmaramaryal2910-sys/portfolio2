@@ -22,3 +22,6 @@ ul,
 li {
   all: unset;
 }
+html {
+  scroll-behavior: smooth;
+}
